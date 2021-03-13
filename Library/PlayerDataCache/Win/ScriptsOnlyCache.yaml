@@ -3,18 +3,18 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - BombController
     - BulletController
+    - EnemyBulletController
     - EnemyManager
-    - GameConfiguration
     - InfantrymanController
     - MenuController
     - PlayerController
+    - ScoreManager
     - ShooterController
+    - WinManager
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -59,20 +59,36 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 11266}
+    - Class: 114
+      Script: {instanceID: 11554}
+    - Class: 114
+      Script: {instanceID: 12276}
+    - Class: 114
       Script: {instanceID: 12334}
     - Class: 114
       Script: {instanceID: 12670}
     - Class: 114
-      Script: {instanceID: 13054}
+      Script: {instanceID: 12752}
     - Class: 114
-      Script: {instanceID: 13558}
+      Script: {instanceID: 13056}
     - Class: 114
-      Script: {instanceID: 13956}
+      Script: {instanceID: 13418}
     - Class: 114
-      Script: {instanceID: 14252}
+      Script: {instanceID: 13562}
     - Class: 114
-      Script: {instanceID: 14390}
+      Script: {instanceID: 13758}
+    - Class: 114
+      Script: {instanceID: 13960}
+    - Class: 114
+      Script: {instanceID: 14374}
+    - Class: 114
+      Script: {instanceID: 14392}
+    - Class: 114
+      Script: {instanceID: 14458}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -81,6 +97,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/MenuScene.unity:
     - Class: 1
@@ -108,15 +130,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12276}
     - Class: 114
-      Script: {instanceID: 12984}
+      Script: {instanceID: 12986}
     - Class: 114
-      Script: {instanceID: 13276}
+      Script: {instanceID: 13278}
     - Class: 114
-      Script: {instanceID: 13358}
+      Script: {instanceID: 13360}
     - Class: 114
-      Script: {instanceID: 13754}
+      Script: {instanceID: 13758}
     - Class: 114
-      Script: {instanceID: 14372}
+      Script: {instanceID: 14374}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -366,7 +388,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 288f44238408b3f0450750f8a8e29d5c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BombController
@@ -384,19 +406,13 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnemyController
-  - hash:
-      serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: b08d344f33752c5f598302450c57d903
+      Hash: a104461777379b336527166e36639f36
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyManager
@@ -412,6 +428,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.Animation.Runtime.dll
     namespaceName: UnityEngine.U2D.Animation
     className: SpriteSkinEntity
+  - hash:
+      serializedVersion: 2
+      Hash: 57bca4bb1c55e681f54cd3c2adcbe197
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -444,7 +466,7 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 288f44238408b3f0450750f8a8e29d5c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InfantrymanController
@@ -516,6 +538,12 @@ ScriptsOnlyBuild:
     className: MenuController
   - hash:
       serializedVersion: 2
+      Hash: 999ca6b07e8cc764d72d9b54253b91d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyBulletController
+  - hash:
+      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -552,7 +580,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: d7de86a100e41b4ccae23115df6c1b4b
+      Hash: 0bc9184441d7329b5d899bed6ab4d236
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -592,12 +620,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameConfiguration
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -642,7 +664,7 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 13ac6f38939b4492a2ec4fa35b9aff22
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShooterController
@@ -672,6 +694,12 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: 7909c7d237cfc1842b86c79712181cc7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WinManager
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -680,4 +708,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MenuScene.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: C:/Programming/Unity/Defense2D/Build/Defense2D.exe
+  playerPath: C:/Programming/Unity/Defence2D/Build/Defense2D.exe
